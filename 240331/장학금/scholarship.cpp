@@ -18,7 +18,7 @@ int main() {
         if (final_test >= 95)
             cout << 150000;
         else if (final_test >= 90)
-            cout << 10000;
+            cout << 100000;
         else 
             cout << 50000;
     }
