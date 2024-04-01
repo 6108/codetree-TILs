@@ -6,12 +6,12 @@ int main() {
     int a, b, c;
 
     cin >> a >> b >> c;
-    if (a < b && b < c)
-        cout << b;
-    else if (b < c && c < a)
-        cout << c;
+    if (a < b && a < c)
+        cout << (b < c ? b : c);
+    else if (b < c && b < a)
+        cout << (c < a ? c : a);
     else
-        cout << a;
+        cout << (a < b ? a : b);
 
     return 0;
 }
