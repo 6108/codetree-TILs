@@ -11,7 +11,7 @@ int main() {
         if (1920 % a == 0 && 2880 % a == 0)
             satisfied = true;
     }
-    cout << (satisfied ? 1 : 0);
+    cout << satisfied;
 
     return 0;
 }
