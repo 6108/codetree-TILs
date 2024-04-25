@@ -13,8 +13,8 @@ int main() {
         if (m[index] != 0 && m[index] % 2 == 0)
             index++;
     }
-    for (int i = index; 0 <= i; i--)
-        cout << m[index] << ' ';
+    for (int i = index - 1; 0 <= i; i--)
+        cout << m[i] << ' ';
 
     return 0;
 }
