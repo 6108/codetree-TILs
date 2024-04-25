@@ -10,7 +10,7 @@ int main() {
     cin >> n;
     for (int i = 0; i < n; i++) {
         cin >> m[index];
-        if (m[index] != 0 && m[index] % 2 == 0)
+        if (m[index] % 2 == 0)
             index++;
     }
     for (int i = index - 1; 0 <= i; i--)
