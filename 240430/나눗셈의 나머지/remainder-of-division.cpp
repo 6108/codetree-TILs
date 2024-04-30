@@ -8,9 +8,9 @@ int main() {
     int ans = 0;
 
     cin >> a >> b;
-    while (0 < a) {
+    while (1 < a) {
         mod[a % b]++;
-        a = a / b;
+        a /= b;
     }
     for (int i = 0; i < b; i++)
         ans += mod[i] * mod[i];
