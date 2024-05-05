@@ -7,7 +7,7 @@ int main() {
     int n, price;
     int buy = INT_MAX;
     int sell; 
-    int profit = -1;
+    int profit = 0;
 
     cin >> n;
     for (int i = 0; i < n; i++) {
@@ -22,7 +22,7 @@ int main() {
                 profit = sell - buy;
         }
     }
-    cout << (profit != -1 ? profit : 0);
+    cout << profit;
 
     return 0;
 }
