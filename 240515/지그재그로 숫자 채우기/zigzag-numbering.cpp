@@ -7,16 +7,6 @@ int main() {
     int a[n][m];
     int cnt = 0;
 
-    // for (int i = 0; i < n; i++) {
-    //     for (int j = 0; j < m; j++) {
-    //         if (j % 2 == 0)
-    //             a[i][j] = i + j * n;
-    //         else
-    //             a[i][j] = j * n
-    //         cnt++;
-    //     }
-    // }
-
     for (int j = 0; j < m; j++) {
         for (int i = 0; i < n; i++) {
             if (j % 2)
