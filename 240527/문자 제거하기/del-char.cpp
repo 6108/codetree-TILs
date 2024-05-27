@@ -10,7 +10,7 @@ int main() {
 
     for (int i = 0; i < length; i++) {
         cin >> n;
-        if (str.length() < n)
+        if (str.length() <= n)
             str.erase(str.length() - 1, 1);
         else
             str.erase(n, 1);
