@@ -7,9 +7,9 @@ int main() {
     cin >> a >> b;
 
     for (int i = 0; i < a.length(); i++) {
-        if (a.substr(i , b.length()) == b) {
+        if (a.substr(i, b.length()) == b) {
             a.erase(i, b.length());
-            i = 0;
+            i = -1;
         }
     }
     cout << a;
