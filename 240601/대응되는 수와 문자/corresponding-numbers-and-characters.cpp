@@ -7,11 +7,13 @@ int main() {
     int n, m;
     cin >> n >> m;
     unordered_map<int, string> map;
+    unordered_map<string, int> map2;
     string s;
 
     for (int i = 1; i <= n; i++) {
         cin >> s;
         map[i] = s;
+        map2[s] = i;
     }
     for (int i = 0; i < m; i++) {
         cin >> s;
@@ -20,10 +22,7 @@ int main() {
             cout << map[id] << '\n';
         }
         else {
-            for (int j = 0; j < map.size(); j++) {
-                if (map[j] == s)
-                    cout << j << '\n';
-            }
+            cout << map2[s] << '\n';
         }
     }
     return 0;
