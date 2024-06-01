@@ -6,18 +6,19 @@ int main() {
     int n, k;
     cin >> n >> k;
     int cnt = 0;
-    int a;
+    int a[n];
     unordered_map<int, int> map;
 
+    int m;
     for (int i = 0; i < n; i++) {
-        cin >> a;
-        map[i] = a;
+        cin >> m;
+        a[i] = m;
+        map[m] = i;
     }
     for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (map[i] + map[j] == k)
-                cnt++;
-        }
+        int b = k - a[i];
+        if (map.find(b) != map.end() && i < map[b])
+            cnt++;
     }
     cout << cnt;
 
