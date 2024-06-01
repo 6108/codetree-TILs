@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+    unordered_map<int, string> map;
+    string s;
+
+    for (int i = 1; i <= n; i++) {
+        cin >> s;
+        map[i] = s;
+    }
+    for (int i = 0; i < m; i++) {
+        cin >> s;
+        if ('1' <= s[0] && s[0] <= '9') {
+            int id = stoi(s);
+            cout << map[id] << '\n';
+        }
+        else {
+            for (int j = 0; j < map.size(); j++) {
+                if (map[j] == s)
+                    cout << j << '\n';
+            }
+        }
+    }
+    return 0;
+}
